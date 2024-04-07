@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="date-country-form">
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <mat-label>Select a country</mat-label>
+    <mat-select formControlName="country" id="country">
+      <mat-option value="US">United States</mat-option>
+      <mat-option value="UK">United Kingdom</mat-option>
+      <!-- Add more countries as needed -->
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+</form>

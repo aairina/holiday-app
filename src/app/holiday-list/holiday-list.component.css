@@ -1,0 +1,5 @@
+/* holiday-list.component.css */
+.holiday-item {
+  border-bottom: 1px solid #ccc; /* Add a border below each item */
+  padding: 10px; /* Add some padding for spacing */
+}
