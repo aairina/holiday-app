@@ -1,3 +1,51 @@
 .date-country-form {
-  margin-bottom: 20px; /* Add space below the form */
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.submit-button {
+  display: flex;
+  width: 30%;
+  padding: 1%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 5%;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.date-country-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.date-country-form-container h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.holidays {
+  margin-top: 15%;
+}
+
+h4 {
+  text-align: center;
 }

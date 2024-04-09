@@ -14,8 +14,6 @@ export class HolidayApiService {
   constructor(private http: HttpClient) {}
 
   getHolidays(countryCode: string, date: Date): Observable<any> {
-    console.log('date in service YMD:', date.getFullYear(), '-', date.getMonth(), '-', date.getDay())
-
     console.log('date full obj: ', date)
     const url = `${this.apiUrl}api_key=${
       this.apiKey

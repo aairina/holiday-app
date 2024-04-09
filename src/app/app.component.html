@@ -1,3 +1,14 @@
-<app-holiday-list></app-holiday-list>
-<app-form-date-country></app-form-date-country>
-<router-outlet />
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over">
+    <button mat-button (click)="sidenav.close()">CLOSE</button>
+    <ul>
+      <li><a routerLink="/search-by-date-country" (click)="sidenav.close()">FIND A HOLIDAY</a></li>
+      <li><a routerLink="/random-holiday" (click)="sidenav.close()">RANDOM HOLIDAY</a></li>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button mat-button class="menu-toggle" (click)="sidenav.toggle()">☰</button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
