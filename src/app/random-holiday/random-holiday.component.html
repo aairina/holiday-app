@@ -1,0 +1,18 @@
+<div *ngIf="article" class="article-container">
+  <h2>{{ article.title }}</h2>
+  <p>{{ article.content }}</p>
+  <div class="source">
+    Source:
+    <a href="https://en.wikipedia.org/wiki/{{ article.title }}">Wikipedia
+      <img src="../../assets/Wikipedia-logo-v2.svg.webp" alt="Wikipedia logo" class="wiki-logo">
+    </a>
+  </div>
+  <button
+  mat-button
+  class="new-button"
+  color="primary"
+  (click)="refresh()"
+>
+  New holiday
+</button>
+</div>
