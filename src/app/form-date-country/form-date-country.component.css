@@ -20,6 +20,10 @@
   border-radius: 5%;
 }
 
+.submit-button:disabled {
+  background-color: #3f51b57b;
+}
+
 :host {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-  width: 75%;
+  width: 60%;
   background-color: #3f51b5;
   color: white;
 }
@@ -33,10 +33,15 @@ mat-sidenav ul {
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
+  max-width: 50px;
+  max-height: 50px;
   margin: 2%;
   background-color: #3f51b5;
   color:white;
   border-radius: 10%;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center; 
 }
 
 mat-sidenav button {

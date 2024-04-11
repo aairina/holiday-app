@@ -4,6 +4,7 @@ import { FormDateCountryComponent } from './form-date-country/form-date-country.
 import { RandomHolidayComponent } from './random-holiday/random-holiday.component';
 
 const routes: Routes = [
+  { path: '', component: FormDateCountryComponent },
   { path: 'search-by-date-country', component: FormDateCountryComponent },
   { path: 'random-holiday', component: RandomHolidayComponent },
 ];
